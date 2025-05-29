@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a id="logo" href="homepage.html">TT2000</a>
+        <ul class="nav-list">
+          <li class="nav-item1"><a href="homepage.html">Home</a></li>
+          <li class="nav-item2"><a href="index.html">List</a></li>
+          <li class="nav-item3"><a href="create.html">Create</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main class="main-content">
+        <h1 class="create-title">Here you will be able to add a new task</h1>
+        <div class="form-container">
+          <form id="createTaskForm" class="form-group" autocomplete="off">
+            <label for="taskInput">Create a new Task:</label>
+            <div class="input-container">
+              <input
+                id="taskInput"
+                type="text"
+                placeholder="Insert a task"
+                autocomplete="off"
+              />
+            </div>
+            <label for="startDateInput">Start Date:</label>
+            <div class="input-container">
+              <input id="startDateInput" type="date" required />
+            </div>
+            <label for="deadlineInput">Deadline:</label>
+            <div class="input-container">
+              <input id="deadlineInput" type="date" required />
+            </div>
+            <button class="cta" type="submit">➕</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2025 TaskTracker2000. All rights reserved.</p>
+    </footer>
+    <script type="module" src="js/create.js"></script>
+  </body>
+</html>
