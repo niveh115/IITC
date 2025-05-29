@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CRUD and Modules</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="logo">GetCar</div>
+        <nav>
+          <div><a href="#">Cars</a></div>
+          <div><a href="#">About</a></div>
+          <div><a href="#">Contact</a></div>
+        </nav>
+      </header>
+      <main>
+        <h1>Cars App</h1>
+        <section id="car-form-section">
+          <h2>Add Car</h2>
+          <form id="createCarForm">
+            <div class="form-group">
+              <label for="inputModel">Model</label>
+              <input
+                id="inputModel"
+                type="text"
+                placeholder="Enter car model"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputYear">Year</label>
+              <input
+                id="inputYear"
+                type="number"
+                placeholder="Enter year"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputKm">KM</label>
+              <input
+                id="inputKm"
+                type="number"
+                placeholder="KM"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputHands">Hands</label>
+              <select id="inputHands">
+                <option
+                  selected
+                  value="brand-new"
+                >
+                  Brand new
+                </option>
+                <option value="secondhand">Secondhand</option>
+                <option value="thirdhand">Thirdhand</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                id="resetFieldsBtn"
+              >
+                Reset fields
+              </button>
+              <button
+                class="btn btn-primary"
+                type="submit"
+              >
+                Create
+              </button>
+            </div>
+          </form>
+        </section>
+        <section id="car-list-section">
+          <h2>Car list</h2>
+          <ul id="carList"></ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 GetCar. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="./js/main.js"
+    ></script>
+  </body>
+</html>
